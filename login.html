@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="assests/bootstrap-4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assestsfontawesome-free-5.10.0-web/css/all.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .app{
+            position: relative;
+            width: 900px;
+            height: 580px;
+
+            background: #000070;
+        }
+
+        .col-5 img{
+            width: inherit;
+            height: inherit;
+        }
+
+        .login{
+            width: inherit;
+            height: inherit;
+            background: url('assests/image/login page background 1.png');
+            background-size: contain;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+
+        #logo{
+            position: relative;
+            width: 150px;
+            height: 40px;
+            left: 30px;
+            top: 30px;
+        }
+
+        h1{
+            position: relative;
+            left: 40px;
+            top: 40px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 45px;
+            color: #FFFFFF;
+            opacity: 0.4;
+        }
+
+        p.d-block{
+            position: relative;
+            left: 50px;
+            top: 50px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+
+        a.d-block{
+            position: relative;
+            left: 50px;
+            top: 30px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: x-small;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+        a:hover{
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+
+        form{
+            position: relative;
+            top: 45px;
+            width: 65%;
+        }
+
+        .input{
+            background: transparent;
+            border: 0;
+            color: white;
+        }
+
+        .input:focus{
+            background: transparent;
+        }
+
+        #password:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="row app mx-auto my-5 p-0 shadow">
+        <div class="col-5 p-0 m-0 h-100">
+            <img src="assests/image/3061701 1.png" alt="">
+        </div>
+        <div class="col-7 m-0 p-0 login">
+            <img src="assests/svg/DANTOWN logo png 1.svg" alt="" id="logo">
+            <h1 class="text-muted">
+                Welcome Back
+            </h1>
+            <p class="d-block">
+                Please, sign in to your account.
+            </p>
+            <a class="d-block" href="#">
+                Don’t have an account yet? SIGN UP NOW!
+            </a>
+            <form action="" method="post" class="ml-5">
+                <div class="input-group input-group-sm border mb-3 border-top-0 border-left-0 border-right-0" style="outline: none;">
+                    <div class="input-group-prepend my-auto mr-4" style="outline: none;">
+                        <img src="assests/svg/mail.svg" style="height: 15px;">
+                    </div>
+                    <input type="email" name="" style="outline: none;" placeholder="Email" class="form-control input">
+                </div>
+                <div class="input-group input-group-sm border mb-3 border-top-0 border-left-0 border-right-0" style="outline: none;">
+                    <div class="input-group-prepend my-auto mr-4" id="password" style="outline: none; height: 16px;">
+                        <img src="assests/svg/Vector (3).svg" style="height: 12px;">
+                    </div>
+                    <input type="password" name="" style="outline: none;" placeholder="Password" class="form-control input">
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                    <label class="custom-control-label text-white" for="customCheck">keep me logged in</label>
+                </div>
+                <div class="row p-0 my-5">
+                    <div class="col m-0">
+                       <button type="submit" class="btn" style="font-size: 12px;background-color: white;color: #21B8C7;;">LOGIN TO DASHBOARD</button>
+                    </div>
+                    <div class="col m-0">
+                        <a href="#" class="text-white">Forgot Password?</a>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="jquery-3.4.1.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="assests/bootstrap-4.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="assests/fontawesome-free-5.10.0-web/js/all.min.js"></script>
+
+    <script>
+        let img = document.getElementById("password");
+        img.addEventListener("click", function(){
+            if(this.nextElementSibling.type == 'password'){
+                this.nextElementSibling.type = "text";
+                this.firstElementChild.src = 'assests/svg/visibility_off.svg';
+                this.firstElementChild.style.height = '18px';
+            }else{
+                this.nextElementSibling.type = "password";
+                this.firstElementChild.src = 'assests/svg/Vector (3).svg';
+                this.firstElementChild.style.height = '12px';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="assests/bootstrap-4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assests/fontawesome-free-5.10.0-web/css/all.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .app{
+            position: relative;
+            width: 900px;
+            height: 560px;
+
+            background: #000070;
+        }
+
+        .col-5 img{
+            width: inherit;
+            height: inherit;
+        }
+
+        .login{
+            width: inherit;
+            height: inherit;
+            background: url('assests/image/login page background 1.png');
+            background-size: contain;
+            background-position: bottom;
+            background-repeat: no-repeat;
+        }
+
+        #logo{
+            position: relative;
+            display: block;
+            width: 150px;
+            height: 40px;
+            top: 40px;
+            float: right;
+        }
+
+        .col-12{
+            position: relative;
+            top: 90px;
+            display: flex;
+            height: 500px;
+        }
+
+        .col-12 .col-2 h1{
+            position: relative;
+            top: 200px;
+            right: 80px;
+            font-size: 80px;
+            width: 686px;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 100px;
+            text-align: center;
+            opacity: 0.5;
+            color: #FFFFFF;
+        }
+
+        .col-12 .col-10 h3.text-white{
+            font-size: 14px;
+        }
+
+        .col-12 .col-10 form{
+            width: 65%;
+            margin-left: 60px;
+        }
+
+        .input{
+            background: transparent;
+            border: 0;
+            color: white;
+        }
+
+        .input:focus{
+            background: transparent;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="row app mx-auto my-5 p-0 shadow">
+        <div class="col-5 p-0 m-0 h-100">
+            <img src="assests/image/3061701 1.png" alt="">
+        </div>
+        <div class="col-7 m-0 p-0 login">
+            <img src="assests/svg/DANTOWN logo png 1.svg" class="mr-5" id="logo">
+            <div class="col-12">
+                <div class="col-2 w-100 ml-2" style="transform: rotate(-90deg);">
+                    <h1 class="w-100">WLECOME!</h1>
+                </div>
+
+                <div class="col-10">
+                    <h3 class="text-white mb-3">It only takes afew seconds to create your account</h3>
+                    <form action="" method="post">
+                        <div class="input-group input-group-sm border mb-3 border-top-0 border-left-0 border-right-0" style="outline: none;">
+                            <div class="input-group-prepend my-auto mr-4" style="outline: none;">
+                                <img src="assests/svg/person.svg" style="height: 15px;">
+                            </div>
+                            <input type="text" name="" style="outline: none;" placeholder="Full name" class="form-control input">
+                        </div>
+                        <div class="input-group input-group-sm border mb-3 border-top-0 border-left-0 border-right-0" style="outline: none;">
+                            <div class="input-group-prepend my-auto mr-4" style="outline: none;">
+                                <img src="assests/svg/mail.svg" style="height: 15px;">
+                            </div>
+                            <input type="email" name="" style="outline: none;" placeholder="Email" class="form-control input">
+                        </div>
+                        <div class="input-group input-group-sm border mb-3 border-top-0 border-left-0 border-right-0" style="outline: none;">
+                            <div class="input-group-prepend my-auto mr-4" style="outline: none;">
+                                <img src="assests/svg/phone.svg" style="height: 15px;">
+                            </div>
+                            <input type="tel" name="" style="outline: none;" placeholder="Phone number" class="form-control input">
+                        </div>
+                        <div class="input-group input-group-sm border mb-3 border-top-0 border-left-0 border-right-0" style="outline: none;">
+                            <div class="input-group-prepend my-auto mr-4" style="outline: none;" onclick="passwordToggle(this)">
+                                <img src="assests/svg/Vector (3).svg" style="height: 12px;">
+                            </div>
+                            <input type="password" name="" style="outline: none;" placeholder="Password" class="form-control input">
+                        </div>
+                        <div class="input-group input-group-sm border mb-3 border-top-0 border-left-0 border-right-0" style="outline: none;">
+                            <div class="input-group-prepend my-auto mr-4" style="outline: none;" onclick="passwordToggle(this)">
+                                <img src="assests/svg/Vector (3).svg" style="height: 12px;">
+                            </div>
+                            <input type="password" name="" style="outline: none;" placeholder="Repeat password" class="form-control input">
+                        </div>
+                        <div class="custom-control custom-checkbox my-3">
+                            <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+                            <label class="custom-control-label text-white" for="customCheck" style="font-size: 13px;">I agree to your <a href="#">terms and conditions</a></label>
+                        </div>
+                        <button type="submit" class="btn w-75" style="font-size: 12px;background-color: white;color: #21B8C7;">sign up to DANTOWN</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery-3.4.1.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap-4.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="fontawesome-free-5.10.0-web/js/all.min.js"></script>
+
+    <script>
+        function passwordToggle(params) {
+            if(params.nextElementSibling.type == 'password'){
+                params.nextElementSibling.type = "text";
+                params.firstElementChild.src = 'assests/svg/visibility_off.svg';
+                params.firstElementChild.style.height = '18px';
+            }else{
+                params.nextElementSibling.type = "password";
+                params.firstElementChild.src = 'assests/svg/Vector (3).svg';
+                params.firstElementChild.style.height = '12px';
+            }
+        }
+        
+    </script>
+</body>
+</html>

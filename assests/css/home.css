@@ -1,0 +1,205 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box !important;
+}
+
+.sidebar{
+    position: fixed;
+    background: rgba(23, 23, 54, 0.8);
+    height: 100%;
+    width: 70px;
+    z-index: 1;
+}
+
+.sidebar .logo{
+    background: #000070;
+    padding: 11px;
+}
+
+.sidebar .logo img{
+    width: 35px;
+    height: 35px;
+    margin-left: 15px;
+}
+.footer{
+    position: relative;
+    top: 310px;
+    border-top: 2px solid #676B87;
+}
+
+.content{
+    width: 95.5%;
+    position: relative;
+    left: 70px;
+}
+
+ul.navbar-nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+button.btn i.fa.fa-search{
+    position: absolute;
+    left: 12.5%;
+    right: 14.63%;
+    top: 12.5%;
+    bottom: 14.62%;
+    background: #C9CED6 !important;
+}
+
+input.form-control.form-control-sm{
+    border: 0px !important;
+    outline: 0px !important;
+}
+aside.d-flex strong{
+    font-family: Futura Bk BT;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: #000070;
+}
+
+aside.d-flex small{
+    color: #A6ACBE;
+}
+
+aside#user{
+    background-color: #000070;
+    border-radius: 20px;
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    color: white !important;
+    align-content: center;
+}
+
+aside#user a{
+    color: inherit;
+}
+
+aside#user a:hover{
+    text-decoration: none;
+}
+
+
+ul.navbar-nav.ml-auto{
+    width: 300px !important;
+}
+
+ul.navbar-nav.ml-auto a .caret{
+    bottom: 37.5%;
+    color: #C9CED6;
+}
+
+ul.navbar-nav.ml-auto sup{
+    background-color: #000070;
+    color: white;
+    height: fit-content;
+    border-radius: 20px;
+    font-size: 9px;
+    position: relative;
+    top: -10px;
+    left: -7px;
+}
+
+div.container div#first-row{
+    background: rgba(0, 0, 112, 0.75);
+}
+
+div.container div.row{
+    border-radius: 11.0889px;
+}
+
+#sales-form{
+    background: rgba(0, 0, 112, 0.75);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+}
+
+select.sel1{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+}
+
+select.sel2{
+    opacity: 0.3;
+    border: 0px 0px 1px 0px solid #FFFFFF;
+    
+}
+
+.form-group{
+    margin-bottom: 12px !important;
+}
+
+
+/* calculator content */
+
+:root{
+    --bg:#ececec;
+    --scolora:#d0d0d0;
+    --scolorb:#f6f6f6;
+    --tcolora:#aaa;
+    --tcolorb:#777;
+}
+
+#calculator{
+    position: relative;;
+    height:400px;
+    width:400px;
+    background:var(--bg);
+    overflow:hidden;
+}
+
+#display{
+    position: relative;;
+    height:30%;
+    width:100%;
+    background:var(--bg);
+    border-radius:0 0 5px 5px;
+    overflow:scroll;
+    line-height:20px;
+    font-size:14px;
+    padding: 0px 15px;
+    margin-bottom: 3px;
+    color:var(--tcolorb);
+    text-align:right;
+    font-weight:bold;
+    border:0;
+    box-shadow:0 .7px 1px var(--scolora);
+}
+
+#theme{
+    background-image:url("https://i.dlpng.com/static/png/6841170_preview.png");
+    background-size:70%;
+    background-position:50%;
+    background-repeat:no-repeat;
+}
+
+#calculator button{
+    height: 40px;
+    width: 80px;
+    position:relative;
+    top:25px;
+    border-radius:1px;
+    border:0;
+    outline:none;
+    margin:  3px 7px;
+    background-color:var(--bg);
+    box-shadow:.4px .4px .6px var(--scolora), -.4px -.4px .6px var(--scolorb);
+    font-size: 14px;
+    font-weight:bold;
+    color:var(--tcolora);
+}
+
+#calculator button:hover{
+    box-shadow:inset .5px .5px .8px var(--scolora),inset -.5px -.5px .8px var(--scolorb);
+}
+
+#theme{
+    background-image:url("https://i.dlpng.com/static/png/6841170_preview.png");
+    background-size:80%;
+    background-position:50%;
+    background-repeat:no-repeat;
+}
