@@ -122,25 +122,7 @@
                                             Asset Value
                                         </td>
                                         <td class=" text-center">
-                                            <a href="#" style="color: white; text-decoration: none;" id="purchase">Cash Value</a>
-                                            <div class="rounded" style="color: #21B8C7;position: absolute;width: fit-content; z-index: 3;display: none;">
-                                                <div class="row" style="border-radius: 15px 15px 0px 0px;background: rgba(0, 0, 112, 0.75);">
-                                                    <img src="assests/svg/timeline.svg" class="mx-auto">
-                                                </div>
-                                                <div style="background: #FBFBFB;box-shadow: 4px 4px 30px rgba(0, 0, 112, 0.2); border-radius: 0px 0px 15px 15px;" class="row justify-content-center flex-column px-5">
-                                                    <p>Conversion Rate:</p>
-                                                    <form action="" method="post">
-                                                        <div class="form-group">
-                                                            <input type="type" name="" id="" class="form-control">
-                                                        </div>
-                                                        <p class="text-center">Possible Outcome</p>
-                                                        <div class="form-group">
-                                                            <input type="type" name="" id="" class="form-control">
-                                                        </div>
-                                                        <button type="submit" class="btn p-2 mb-3 w-75" style="background: rgba(0, 0, 112, 0.75);border-radius: 10px; color: white;">TRADE NOW</button>
-                                                    </form>
-                                                </div>
-                                            </div>
+                                            Cash Value
                                         </td>
                                         <td class=" text-center">
                                             Status
@@ -370,35 +352,25 @@
                 <!-- Modal body -->
                 <div class="modal-body mx-auto">
                     
-                    <div id="calculator">
-                        <input id="display" value ="0.0" type="text" disabled/>
-                        <button onclick="allclear()">C</button>
-                        <button onclick="back()"><</button>
-                        <button onclick="add('%')">%</button>
-                        <button onclick="add('/')">÷</button>
-                        <button onclick="add('1')">1</button>
-                        <button onclick="add('2')">2</button>
-                        <button onclick="add('3')">3</button>
-                        <button onclick="add('*')">×</button>
-                        <button onclick="add('4')">4</button>
-                        <button onclick="add('5')">5</button>
-                        <button onclick="add('6')">6</button>
-                        <button onclick="add('-')">-</button>
-                        <button onclick="add('7')">7</button>
-                        <button onclick="add('8')">8</button>
-                        <button onclick="add('9')">9</button>
-                        <button onclick="add('+')">+</button>
-                        <button id="theme" onclick="theme()"> ‎ ‎</button>
-                        <button onclick="add('0')">0</button>
-                        <button onclick="add('.')">.</button>
-                        <button onclick="calc()">=</button>
-                   </div>
+                    <div class="rounded" style="color: #21B8C7;width: fit-content;">
+                        <div class="row" style="border-radius: 15px 15px 0px 0px;background: rgba(0, 0, 112, 0.75);">
+                            <img src="assests/svg/timeline.svg" class="mx-auto">
+                        </div>
+                        <div style="background: #FBFBFB;box-shadow: 4px 4px 30px rgba(0, 0, 112, 0.2); border-radius: 0px 0px 15px 15px;" class="row justify-content-center flex-column px-5">
+                            <p class="text-center mt-2">Conversion Rate:</p>
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <input type="type" name="" id="" class="form-control mx-auto">
+                                </div>
+                                <p class="text-center">Possible Outcome</p>
+                                <div class="form-group">
+                                    <input type="type" name="" id="" class="form-control mx-auto">
+                                </div>
+                                <button type="submit" class="btn p-2 mb-3 w-75" style="background: rgba(0, 0, 112, 0.75);border-radius: 10px; color: white;margin-left: 35px;">TRADE NOW</button>
+                            </form>
+                        </div>
+                    </div>
 
-                </div>
-                
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
                 
               </div>
@@ -411,18 +383,7 @@
     <script src="assests/bootstrap-4.4.1/dist/js/bootstrap.js"></script>
     <script src="popper.min.js"></script>
     <script src="assests/Chart.js-2.9.3/dist/Chart.js"></script>
-    <script src="assests/js/calculator.js"></script>
     <script>
-        var a = document.getElementById("purchase");
-        var div = a.nextElementSibling;
-        a.addEventListener("click", function(){
-            console.log(div)
-            if (div.style.display == "none") {
-                div.style.display = "";
-            } else {
-                div.style.display = "none";
-            }
-        });
 
 		var randomScalingFactor = function() {
 			return Math.round(Math.random() * 100);

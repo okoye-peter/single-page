@@ -12,11 +12,8 @@
         }
 
         .app{
-            position: relative;
-            width: 900px;
-            height: 580px;
-
             background: #000070;
+            height: 667px;
         }
 
         .col-5 img{
@@ -43,7 +40,8 @@
 
         h1{
             position: relative;
-            left: 40px;
+            padding-left: 40px;
+            width: inherit;
             top: 40px;
             font-style: normal;
             font-weight: 600;
@@ -52,9 +50,9 @@
             opacity: 0.4;
         }
 
-        p.d-block{
+        p.paragraph{
             position: relative;
-            left: 50px;
+            padding-left: 50px;
             top: 50px;
             font-style: normal;
             font-weight: 500;
@@ -64,7 +62,7 @@
 
         a.d-block{
             position: relative;
-            left: 50px;
+            padding-left: 50px;
             top: 30px;
             font-style: normal;
             font-weight: 600;
@@ -100,16 +98,16 @@
     </style>
 </head>
 <body>
-    <div class="row app mx-auto my-5 p-0 shadow">
+    <div class="d-flex w-100 app m-0 p-0 shadow">
         <div class="col-5 p-0 m-0 h-100">
             <img src="assests/image/3061701 1.png" alt="">
         </div>
         <div class="col-7 m-0 p-0 login">
             <img src="assests/svg/DANTOWN logo png 1.svg" alt="" id="logo">
-            <h1 class="text-muted">
+            <h1 class="mx-0  w-100">
                 Welcome Back
             </h1>
-            <p class="d-block">
+            <p class="paragraph">
                 Please, sign in to your account.
             </p>
             <a class="d-block" href="#">
