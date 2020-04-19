@@ -15,7 +15,7 @@
             background: #000070;
         }
 
-        .col-5 img{
+        .col-lg-5 img{
             width: inherit;
             height: 100vh;
         }
@@ -37,12 +37,12 @@
             
         }
 
-        .col-12{
+        .col-lg-12{
             margin-top: 90px;
             display: flex;
         }
 
-        .col-12 .col-2 h1{
+        .col-lg-12 .col-lg-2 h1{
             margin-top: 150px;
             margin-left: -140px;
             font-size: 80px;
@@ -55,11 +55,11 @@
             color: #FFFFFF;
         }
 
-        .col-12 .col-10 h3.text-white{
+        .col-lg-12 .col-lg-10 h3.text-white{
             font-size: 14px;
         }
 
-        .col-12 .col-10 form{
+        .col-lg-12 .col-lg-10 form{
             width: 65%;
         }
 
@@ -71,23 +71,63 @@
 
         .input:focus{
             background: transparent;
+            color: white;
+        }
+
+        form .btn{
+            font-size: 12px;
+            background-color: white;
+            color: #21B8C7;
+        }
+
+        @media screen and (max-width: 768px) {
+            .col-md-0{
+                display: none;
+            }
+            
+            .col-md-12, .col-sm-12, .col-12{
+                padding: 5px;
+                padding-bottom: 40px !important;
+                /* height: ; */
+            }
+
+            .app{
+                width: 100% !important;
+                height: -webkit-fill-available;;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .col-lg-12 .col-lg-2 h1{
+                margin-top: 140px;
+                margin-left: -260px;
+                font-size: 100px;
+            }
+
+            .col-lg-12 .col-lg-10 h3.text-white{
+                font-size: 12px;
+            }
+
+            form .btn{
+                font-size: 1.1ch;
+            }
         }
 
     </style>
 </head>
 <body>
     <div class="row app w-100 m-0 p-0 shadow">
-        <div class="col-5 p-0 m-0">
+        <div class="col-lg-5 col-md-0 col-sm-0 col-0 p-0 m-0">
             <img src="assests/image/3061701 1.png" alt="">
         </div>
-        <div class="col-7 m-0 p-0 login">
+        <div class="col-lg-7 col-md-12 col-12 col-sm-12 m-0 p-0 login">
             <img src="assests/svg/DANTOWN logo png 1.svg" class="mr-5" id="logo">
-            <div class="col-12">
-                <div class="col-2 w-100 ml-2" style="transform: rotate(-90deg);">
-                    <h1 class="w-100">WLECOME!</h1>
+            <div class="col-lg-12 col-md-12 col-12 col-sm-12">
+                <div class="col-lg-2 col-md-2 col-2 col-sm-2 w-100 ml-2" style="transform: rotate(-90deg);">
+                    <h1 class="w-100">WELCOME!</h1>
                 </div>
 
-                <div class="col-10">
+                <div class="col-lg-10 col-md-10 col-10 col-sm-10">
                     <h3 class="text-white mb-3">It only takes afew seconds to create your account</h3>
                     <form action="" method="post" class="mx-auto">
                         <div class="input-group input-group-sm border mb-4 border-top-0 border-left-0 border-right-0" style="outline: none;">
@@ -124,7 +164,7 @@
                             <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
                             <label class="custom-control-label text-white" for="customCheck" style="font-size: 13px;">I agree to your <a href="#">terms and conditions</a></label>
                         </div>
-                        <button type="submit" class="btn w-75" style="font-size: 12px;background-color: white;color: #21B8C7;">sign up to DANTOWN</button>
+                        <button type="submit" class="btn w-75">sign up to DANTOWN</button>
                     </form>
                 </div>
             </div>
