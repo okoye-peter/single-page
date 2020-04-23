@@ -22,12 +22,18 @@
     margin-left: 15px;
 }
 
-.footer{
+.container-fluid .row .sidebar .footer{
     position: relative;
     top: 310px;
     border-top: 2px solid #676B87;
 }
 
+.footer small{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+    color: #000070;
+}
 .content{
     width: 94.6%;
     position: relative;
@@ -149,6 +155,9 @@ select.sel2{
 }
 
 @media screen and (max-width: 768px){
+    .container-fluid .row .sidebar .footer{
+        top: 200px;
+    }
     .content nav.navbar{
         width: 100% !important;
     }
@@ -175,6 +184,10 @@ select.sel2{
 
     .content .container{
         padding: 20px;
+    }
+
+    #third-row .third-row.row{
+        margin-top: 0px !important;
     }
 
     #third-row .third-row div.col-lg-5{
@@ -205,10 +218,7 @@ select.sel2{
         margin: 4px auto;
     }
 
-    .footer{
-    }
-
-    .footer h6{
-        font-size: 12px;
+    .footer h6, .footer small{
+        font-size: 10px;
     }
 }
