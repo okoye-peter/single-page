@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assests/bootstrap-4.4.1/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="assests/fontawesome-free-5.12.1-web/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <style>
         /* textarea modal css begins */
         #textareaModal .modal-dialog .modal-content .modal-header{
@@ -18,8 +18,8 @@
 
         #textareaModal .modal-dialog .modal-content .modal-body form .shadow textarea{
             resize: none;
-            background-color: #f5f5f0;
-            border: #f5f5f0;
+            background-color: whitesmoke;
+            border: whitesmoke;
             outline: none !important;
         }
 
@@ -46,6 +46,16 @@
         #BomakTextarea{
             display: none;
         }
+        /* modalwith textarea ends */
+
+        /* modal without textarea css begins */
+        #formModal .modal-dialog .modal-content .modal-header{
+            border-bottom: 0px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 700px;
+            font-size: 25px;
+        }
+
 
     </style>
 </head>
@@ -54,12 +64,12 @@
 
     <div class="row p-4">
         <!-- Button trigger modal with textarea -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#textareaModal">
+        <button type="button" class="btn btn-primary mr-5" data-toggle="modal" data-target="#textareaModal">
             Launch modal with textarea
         </button>
         <!-- Button trigger modal without textarea-->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#textareaModal">
-            Launch modal with textarea
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#formModal">
+            Launch modal without textarea
         </button>
     </div>
 
@@ -96,31 +106,23 @@
             </div>
         </div>
     </div>
-    
-    <!-- Modal with textarea -->
-    <div class="modal fade" id="textareaModal" tabindex="-1" role="dialog" aria-labelledby="textareaModalTitle" aria-hidden="true">
+
+    <!-- Modal with form -->
+    <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title mx-auto" id="exampleModalCenterTitle">Message: Vsk1</h3>
+                    <h3 class="modal-title mx-auto" id="exampleModalCenterTitle">Edit vaccine Expiry</h3>
+                    <button type="button" class="close text-red" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <div class="row pl-4 mb-2">
-                        <a href="#" id="English" class="mr-5 active">
-                            English
-                        </a>
-                        <a href="#" id="Bomak">
-                            Bomak
-                        </a>
-                    </div>
                     <form action="" method="POST" role="form">
-                        <div class="form-group shadow" id="EnglishTextarea">
-                            <textarea class="form-control" placeholder="English...."  rows="10" cols="8" ></textarea>
-                        </div>
-                        <div class="form-group shadow" id="BomakTextarea">
-                            <textarea class="form-control"  rows="10" cols="8" placeholder="Bomak..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-sm mx-auto d-block w-25">Send</button>
+                        <div class="form-group row">
+                            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                              <input type="text" class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                            </div>
+                        </div>                        
                     </form>              
                 </div>
                 <div class="modal-footer">
@@ -131,10 +133,9 @@
         </div>
     </div>
 
-    <script src="assests/fontawesome-free-5.12.1-web/js/all.min.js"></script>
-    <script src="jquery-3.4.1.js"></script>
-    <script src="assests/bootstrap-4.4.1/dist/js/bootstrap.js"></script>
-    <script src="popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <script>
         let engBtn = document.getElementById("English");
