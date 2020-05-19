@@ -34,6 +34,7 @@
     line-height: 30px;
     color: #000070;
 }
+
 .content{
     width: 94.6%;
     position: relative;
@@ -113,11 +114,12 @@ ul.navbar-nav.ml-auto sup{
     left: -7px;
 }
 
-div.container div#first-row{
-    background: rgba(0, 0, 112, 0.75);
+div.welcome div#first-row {
+    background: url('../image/WhatsApp Image 2020-05-19 at 15.05.29.jpeg') no-repeat;
+    background-position: center;
 }
 
-div.container div#first-row .btn{
+div.container-fluid div#first-row .btn{
     background-color: #FFB800; 
     font-size: smaller; 
     width: 200px; 
@@ -126,17 +128,27 @@ div.container div#first-row .btn{
     width: 200px;
 }
 
+div.container div#first-row h6, div.container div#first-row .d-flex{
+    width: 64.5em;
+}
+
+div.welcome > .row{
+    width: 65em;
+    margin-left: 1.5em;
+}
+
 .btn-warning{
     color: white;
 }
 div.container div.row{
     border-radius: 11.0889px;
+    background-color: none;
 }
 
 #sales-form{
     background: rgba(0, 0, 112, 0.75);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 select.sel1{
@@ -150,8 +162,51 @@ select.sel2{
     
 }
 
+.third-row{
+    width: 20em; 
+    margin: 0px;
+}
+
+.third-row .col-lg-12{
+    width: 19em;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+}
+
+.third-row .col-lg-12 img{
+    width: 6em;
+    height: 4em;
+}
+
 .form-group{
     margin-bottom: 12px !important;
+}
+
+#coin{
+    position: relative;
+    top: 2em;
+}
+
+#coin form .form-group select{
+    background: linear-gradient(180deg, #FFFFFF 0%, #D5D5D5 100%);
+    color: #000070;
+}
+
+.coinSelector{
+    background: #F9F9F9;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+}
+
+#grids{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-around;
+}
+
+.grid{
+    background: #FFFFFF;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 768px){
@@ -179,7 +234,6 @@ select.sel2{
 
     nav ul.navbar-nav.ml-auto aside strong{
         text-align: left;
-        /* margin-bottom: 10px; */
     }
 
     .content .container{
