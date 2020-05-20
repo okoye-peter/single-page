@@ -1,0 +1,227 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box !important;
+}
+
+.sidebar{
+    position: fixed;
+    background: rgba(23, 23, 54, 0.8);
+    height: 100%;
+    width: 70px;
+    z-index: 1;
+}
+
+.sidebar .logo{
+    background: #000070;
+    padding: 11px;
+}
+
+.sidebar .logo img{
+    width: 35px;
+    height: 35px;
+    margin-left: 15px;
+}
+
+.container-fluid .row .sidebar .footer{
+    position: relative;
+    top: 310px;
+    border-top: 2px solid #676B87;
+}
+
+.footer small{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 30px;
+    color: #000070;
+}
+
+.content{
+    width: 94.6%;
+    position: relative;
+    left: 70px;
+
+}
+
+ul.navbar-nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+button.btn i.fa.fa-search{
+    position: absolute;
+    left: 12.5%;
+    right: 14.63%;
+    top: 12.5%;
+    bottom: 14.62%;
+    background: #C9CED6 !important;
+}
+
+#search{
+    border: 0px !important;
+    outline: 0px !important;
+}
+
+aside.d-flex strong{
+    font-family: Futura Bk BT;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: right;
+    letter-spacing: 0.01em;
+    color: #000070;
+}
+
+aside.d-flex small{
+    color: #A6ACBE;
+}
+
+aside#user{
+    background-color: #000070;
+    border-radius: 20px;
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    color: white !important;
+    align-content: center;
+}
+
+aside#user a{
+    color: inherit;
+}
+
+aside#user a:hover{
+    text-decoration: none;
+}
+
+
+ul.navbar-nav.ml-auto{
+    width: 300px !important;
+}
+
+ul.navbar-nav.ml-auto a .caret{
+    bottom: 37.5%;
+    color: #C9CED6;
+}
+
+ul.navbar-nav.ml-auto sup{
+    background-color: #000070;
+    color: white;
+    height: fit-content;
+    border-radius: 20px;
+    font-size: 9px;
+    position: relative;
+    top: -10px;
+    left: -7px;
+}
+
+div.welcome > .row{
+    width: 65em;
+    margin-left: 1.5em;
+}
+
+.sectionTwo > div:first-child{
+    background: rgba(0, 0, 112, 0.8);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.sectionTwo div .grids{
+    background: linear-gradient(180deg, rgba(0, 0, 112, 0.7) 0%, rgba(0, 0, 112, 0) 100%);
+    border-radius: 0px;
+}
+
+.sectionThree div.col-lg-4:first-child form{
+    background: rgba(0, 0, 112, 0.75);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    padding: 0.9em;
+    color: white;
+}
+
+.sectionThree div.col-lg-4:first-child form div.d-flex:first-child div:first-child {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px 0px 0px 10px;
+    font-size: 12px;
+    color: white;
+}
+
+.sectionThree div.col-lg-4:first-child form div.d-flex:first-child div:last-child{
+    border-radius: 0px 10px 10px 0px;
+    font-size: 12px;
+    background: #21B8C7;
+    color: white;
+}
+
+.sectionThree div.col-lg-4:first-child form div.form-group select.form-control{
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+}
+
+.sectionThree div.col-lg-4:first-child form div.form-group label{
+    font-size: small;
+    margin-bottom: 0px;
+    margin-left: 1.4em;
+}
+
+.sectionThree div.col-lg-4:first-child form div.row.mx-4.mb-2 div.col-lg-6.col-md-6.col-sm-6.col-6 input{
+    background: transparent;
+    border: 0px;
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.6); 
+    width: 6.5em;
+    padding: 0px;
+    color: white;
+    outline: 0px;
+}
+
+.sectionThree div.col-lg-4:first-child form div.row.mx-4.mb-2 div.col-lg-6.col-md-6.col-sm-6.col-6 input::placeholder{
+    color: white;
+    font-size: x-small;
+}
+
+.sectionThree div.col-lg-4:first-child form div.form-group.mx-4 input{
+    background: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    padding-left: 4em;
+    outline: none;
+    color: white;
+    width: 14em;
+}
+
+.sectionThree div.col-lg-4:first-child form div.form-group.mx-4 span{
+    position: relative;
+    top: -1.8em;
+    font-size: small;
+}
+
+.sectionThree div.col-lg-4:first-child form button{
+    color: #21B8C7;     
+    background: #FFFFFF;
+    border-radius: 30px;
+    width: 17em;
+}
+
+#convertion > p{
+    background: rgba(0, 0, 112, 0.75);
+    border-radius: 15px 15px 0px 0px;
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+#convertion > .d-flex{
+    border-radius: 0px 0px 15px 15px;
+}
+
+#convertion > .d-flex p{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 112, 0.75);
+    font-size: 14px;
+}
+
+#convertion > .d-flex form div label{
+    font-size: 14px;
+    padding-left: 0.8   em;
+    color: rgba(0, 0, 112, 0.75);
+}

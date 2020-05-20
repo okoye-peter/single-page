@@ -120,7 +120,7 @@ div.welcome > .row{
 }
 
 .sectionTwo > div:first-child{
-    background: linear-gradient(180deg, rgba(0, 0, 112, 0.7) 0%, rgba(0, 0, 112, 0) 200%);
+    background: rgba(0, 0, 112, 0.8);
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -154,7 +154,7 @@ div.welcome > .row{
 }
 
 .sectionTwo div .grids{
-    background: rgba(0, 0, 112, 0.8);
+    background: linear-gradient(180deg, rgba(0, 0, 112, 0.7) 0%, rgba(0, 0, 112, 0) 100%);
 }
 
 .sectionTwo div .grids .grid, .tableDisplay .row .col-lg-12 div{
