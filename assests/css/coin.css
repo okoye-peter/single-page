@@ -114,100 +114,73 @@ ul.navbar-nav.ml-auto sup{
     left: -7px;
 }
 
-div.welcome div#first-row {
-    background: url('../image/WhatsApp Image 2020-05-19 at 15.05.29.jpeg') no-repeat;
-    background-position: center;
-}
-
-div.container-fluid div#first-row .btn{
-    background-color: #FFB800; 
-    font-size: smaller; 
-    width: 200px; 
-    border-radius: 15px;
-    font-size: smaller; 
-    width: 200px;
-}
-
-div.container div#first-row h6, div.container div#first-row .d-flex{
-    width: 64.5em;
-}
-
 div.welcome > .row{
     width: 65em;
     margin-left: 1.5em;
 }
 
-.btn-warning{
-    color: white;
-}
-div.container div.row{
-    border-radius: 11.0889px;
-    background-color: none;
-}
-
-#sales-form{
-    background: rgba(0, 0, 112, 0.75);
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+.sectionTwo > div{
+    background: linear-gradient(180deg, rgba(0, 0, 112, 0.7) 0%, rgba(0, 0, 112, 0) 100%);
+    
     border-radius: 10px 10px 0px 0px;
 }
 
-select.sel1{
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
+
+.sectionTwo div div.row:first-child form input#searchInput{
+    background: transparent;
+    outline: none;
+    border: 0px;
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 0.3em;
+    padding-right: 2em;
 }
 
-select.sel2{
-    opacity: 0.3;
-    border: 0px 0px 1px 0px solid #FFFFFF;
-    
-}
-
-.third-row{
-    width: 20em; 
-    margin: 0px;
-}
-
-.third-row .col-lg-12{
-    width: 19em;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
-}
-
-.third-row .col-lg-12 img{
-    width: 6em;
-    height: 4em;
-}
-
-.form-group{
-    margin-bottom: 12px !important;
-}
-
-#coin{
+.sectionTwo div div.row:first-child form button{
     position: relative;
-    top: 2em;
+    background: transparent;
+    outline: none;
+    border: 0;
+    color: white;
+    left: -2.2em;
 }
 
-#coin form .form-group select{
-    background: linear-gradient(180deg, #FFFFFF 0%, #D5D5D5 100%);
-    color: #000070;
-}
-
-.coinSelector{
-    background: #F9F9F9;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
-    border-radius: 10px;
-}
-
-#grids{
+.sectionTwo div .grids{
+    border-radius: 0px;
     display: grid;
-    grid-template-columns: 45% 45%;
-    justify-content: space-around;
+    grid-template-columns: 10% 10% 14% 16% 11% 12% 27%;
+    color: white;
+    font-size: 12px;
+    align-items: center;
+    background: rgba(0, 0, 112, 0.8);
 }
 
-.grid{
-    background: #FFFFFF;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+.sectionTwo div .grids .grid{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.8em;
 }
+
+.sectionTwo div .grids .grid span{
+    position: relative;
+    bottom: 0.4em;
+    width: fit-content;
+}
+
+.sectionTwo div .grids .grid span button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: white;
+}
+
+.sectionTwo div .grids .grid span button:last-child{
+    position: relative;
+    left: -1.95em;
+    top: 1em;
+}
+
+
 
 
 @media screen and (max-width: 768px){
@@ -239,38 +212,6 @@ select.sel2{
 
     .content .container{
         padding: 20px;
-    }
-
-    #third-row .third-row.row{
-        margin-top: 0px !important;
-    }
-
-    #third-row .third-row div.col-lg-5{
-        width: 250px !important;
-        height: 140px;
-        font-size: 14px;
-        margin: 10px 10px 10px 10px ;
-    }
-
-    #third-row .third-row div.col-lg-5 img{
-        height: 40px;
-        width: 40px;
-    }
-
-    #third-row{
-        flex-direction: column;
-        padding: 0px;
-        margin: 0px;
-    }
-
-    #third-row  #sales-form{
-        width: 280px;
-        margin: 4px auto;
-    }
-
-    #third-row .chartdiv .shadow{
-        width: 300px;
-        margin: 4px auto;
     }
 
     .footer h6, .footer small{
