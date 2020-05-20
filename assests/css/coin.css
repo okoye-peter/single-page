@@ -119,9 +119,8 @@ div.welcome > .row{
     margin-left: 1.5em;
 }
 
-.sectionTwo > div{
-    background: linear-gradient(180deg, rgba(0, 0, 112, 0.7) 0%, rgba(0, 0, 112, 0) 100%);
-    
+.sectionTwo > div:first-child{
+    background: linear-gradient(180deg, rgba(0, 0, 112, 0.7) 0%, rgba(0, 0, 112, 0) 200%);
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -145,20 +144,35 @@ div.welcome > .row{
     left: -2.2em;
 }
 
-.sectionTwo div .grids{
+.sectionTwo div .grids, .tableDisplay .row .col-lg-12{
     border-radius: 0px;
     display: grid;
     grid-template-columns: 10% 10% 14% 16% 11% 12% 27%;
     color: white;
     font-size: 12px;
     align-items: center;
+}
+
+.sectionTwo div .grids{
     background: rgba(0, 0, 112, 0.8);
 }
 
-.sectionTwo div .grids .grid{
+.sectionTwo div .grids .grid, .tableDisplay .row .col-lg-12 div{
     display: flex;
-    justify-content: space-around;
     padding: 0.8em;
+    margin: 0px;
+}
+
+.tableDisplay .row .col-lg-12 div{
+    color: black;
+}
+
+.tableDisplay .row .col-lg-12:nth-child(odd){
+    background: #ECECEC;
+}
+
+.tableDisplay .row .col-lg-12:nth-child(even){
+    background: #F7F7F7;
 }
 
 .sectionTwo div .grids .grid span{
@@ -180,9 +194,19 @@ div.welcome > .row{
     top: 1em;
 }
 
+.tableDisplay{
+    width: 65em;
+}
+
+.tableDisplay .row > div div:last-child{
+    display: flex;
+    justify-content: space-between;
+}
+
 .tableDisplay .row > div div:last-child a{
-    padding: 0.4em;
-    background-color: lavender;
+    padding: 0.3em;
+    background-color: #C7C7C7;
+    text-decoration: none;
 } 
 
 
