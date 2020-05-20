@@ -180,7 +180,10 @@ div.welcome > .row{
     top: 1em;
 }
 
-
+.tableDisplay .row > div div:last-child a{
+    padding: 0.4em;
+    background-color: lavender;
+} 
 
 
 @media screen and (max-width: 768px){
