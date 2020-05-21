@@ -151,15 +151,10 @@ div.container div.row{
     border-radius: 10px 10px 0px 0px;
 }
 
-select.sel1{
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
-}
-
-select.sel2{
-    opacity: 0.3;
-    border: 0px 0px 1px 0px solid #FFFFFF;
-    
+.coinSelector{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 10px;
+    height: 15em;
 }
 
 .third-row{
@@ -191,11 +186,6 @@ select.sel2{
     color: #000070;
 }
 
-.coinSelector{
-    background: #F9F9F9;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
-    border-radius: 10px;
-}
 
 #grids{
     display: grid;
@@ -209,6 +199,33 @@ select.sel2{
     border-radius: 10px;
 }
 
+.grid img{
+    width: 2em;
+    height: 2em;
+}
+
+.grid p span{
+    line-height: 1em;
+    font-size: 14px;
+}
+
+#add{
+    background: #21B8C7;
+    border-radius: 20px 20px 0px 0px;
+    height: 3.5em;
+    position: relative;
+    bottom: -1.5em;
+}
+
+#add .grid{
+    width: 11em;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    top: -1.7em;
+    height: 2.7em;
+}
 
 @media screen and (max-width: 768px){
     .container-fluid .row .sidebar .footer{
@@ -220,6 +237,14 @@ select.sel2{
 
     .btn-warning{
         margin-bottom: 10px;
+    }
+
+    #first-row{
+        width: 100%;
+    }
+
+    #first-row .d-flex{
+        flex-wrap: wrap;
     }
 
     #first-row .col-lg-6.col-md-6.col-sm-6 .btn{
@@ -258,7 +283,8 @@ select.sel2{
     }
 
     #third-row{
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
         padding: 0px;
         margin: 0px;
     }
