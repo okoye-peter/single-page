@@ -209,8 +209,20 @@ div.welcome > .row{
     text-decoration: none;
 } 
 
-
 @media screen and (max-width: 768px){
+    nav ul.navbar-nav.ml-auto{
+        margin-left: 0px !important;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    nav ul.navbar-nav.ml-auto aside strong{
+        text-align: left;
+    }
+}
+
+
+@media screen and (max-width: 1024px){
     .container-fluid .row .sidebar .footer{
         top: 200px;
     }
@@ -222,26 +234,31 @@ div.welcome > .row{
         margin-bottom: 10px;
     }
 
-    #first-row .col-lg-6.col-md-6.col-sm-6 .btn{
-        width: 150px;
-        font-size: 12px;
-    }
-
-    nav ul.navbar-nav.ml-auto{
-        margin-left: 0px !important;
-        flex-direction: row;
-        margin-top: 10px;
-    }
-
-    nav ul.navbar-nav.ml-auto aside strong{
-        text-align: left;
-    }
-
     .content .container{
         padding: 20px;
     }
 
     .footer h6, .footer small{
         font-size: 10px;
+    }
+
+    .container.welcome{
+        padding: 0px;
+    }
+    div.welcome > .sectionTwo, div.welcome .footer{
+        width: 56em;
+        margin-right: 1em;
+    }
+
+    .sectionTwo div .grids, .tableDisplay .row .col-lg-12{
+        grid-template-columns: 9% 11% 14% 18% 12% 14% 22%;
+    }
+
+    .sectionTwo div .grids .grid{
+        font-size: 10px;
+    }
+
+    .sectionTwo div .grids .grid span button:last-child {
+        left: -2.1em;
     }
 }
