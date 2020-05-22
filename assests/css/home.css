@@ -36,9 +36,7 @@
 }
 
 .content{
-    width: -webkit-fill-available;
-    /* position: relative;
-    left: 48px; */
+    width: 100%;
 }
 
 ul.navbar-nav{

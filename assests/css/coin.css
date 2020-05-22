@@ -35,7 +35,11 @@
 }
 
 .content{
-    width: -webkit-fill-available;
+    width: 100%;
+}
+
+nav.navbar{
+    margin-left: 3em;
 }
 
 ul.navbar-nav{
@@ -111,8 +115,8 @@ ul.navbar-nav.ml-auto sup{
 }
 
 div.welcome > .row{
-    width: 65em;
-    margin-left: 1.5em;
+    width: inherit;
+    margin-left: 0.1em;
 }
 
 .sectionTwo > div:first-child{
@@ -191,7 +195,7 @@ div.welcome > .row{
 }
 
 .tableDisplay{
-    width: 65em;
+    width: inherit;
 }
 
 .tableDisplay .row > div div:last-child{
@@ -205,33 +209,18 @@ div.welcome > .row{
     text-decoration: none;
 } 
 
-@media screen and (max-width: 768px){
-    nav ul.navbar-nav.ml-auto{
-        margin-left: 0px !important;
-        flex-direction: row;
-        margin-top: 10px;
-    }
-
-    nav ul.navbar-nav.ml-auto aside strong{
-        text-align: left;
-    }
-
-    div.welcome .footer{
-        flex-wrap: wrap;
-    }
-}
-
-
+/* tablet */
 @media screen and (max-width: 1024px){
     .container-fluid .row .sidebar .footer{
         top: 200px;
     }
-    .content nav.navbar{
-        width: 100% !important;
+    
+    .d-flex{
+        flex-wrap: wrap;
     }
 
     .btn-warning{
-        margin-bottom: 10px;
+        margin-bottom   : 10px;
     }
 
     .content .container{
@@ -244,9 +233,12 @@ div.welcome > .row{
 
     .container.welcome{
         padding: 0px;
+        position: relative;
+        left: 21px;
+        width: 60em;
     }
     div.welcome > .sectionTwo, div.welcome .footer{
-        width: 56em;
+        width: inherit;
         margin-right: 1em;
     }
 
@@ -260,5 +252,39 @@ div.welcome > .row{
 
     .sectionTwo div .grids .grid span button:last-child {
         left: -2.1em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav ul.navbar-nav.ml-auto{
+        margin-left: auto;
+        flex-direction: row;
+        margin-top: 10px;
+    }
+
+    nav ul.navbar-nav.ml-auto aside strong{
+        text-align: left;
+    }
+
+    .container.welcome{
+        width: 43em;
+        
+    }
+
+    .sectionTwo div .grids .grid span button:last-child{
+        top: 0;
+        left: -0.13em;
+    }
+
+    .tableDisplay .row > div div:last-child a{
+        margin-right: 0.3em;
+    }
+
+    .tableDisplay .row > div div:last-child a{
+        padding: 0.01em 0.02em;
+    }
+
+    div.welcome .footer{
+        flex-wrap: wrap;
     }
 }

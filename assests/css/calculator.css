@@ -35,8 +35,7 @@
 }
 
 .content{
-    width: -webkit-fill-available;
-
+    width: 100%;
 }
 
 ul.navbar-nav{
@@ -260,5 +259,9 @@ div.welcome > .row{
 
     .content .container{
         padding: 20px;
+    }
+
+    .sectionThree{
+        flex-wrap: wrap;
     }
 }
