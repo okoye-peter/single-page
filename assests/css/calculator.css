@@ -1,6 +1,6 @@
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-sizing: border-box !important;
+    box-sizing: border-box;
 }
 
 .sidebar{
@@ -35,9 +35,7 @@
 }
 
 .content{
-    width: 81.3em;
-    position: relative;
-    left: 48px;
+    width: -webkit-fill-available;
 
 }
 
