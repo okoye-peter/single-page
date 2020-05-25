@@ -101,7 +101,7 @@ ul.navbar-nav.ml-auto a .caret{
 
 ul.navbar-nav.ml-auto sup{
     background-color: #000070;
-    color: white;
+    color: rgb(229, 155, 155);
     height: fit-content;
     border-radius: 20px;
     font-size: 9px;
@@ -110,141 +110,152 @@ ul.navbar-nav.ml-auto sup{
     left: -7px;
 }
 
+div.welcome{
+    padding-left: 3em;
+    padding-right: 0px;
+}
+
 div.welcome > .row{
     width: 65em;
     margin-left: 1.5em;
 }
 
-.sectionTwo > div:first-child{
-    background: rgba(0, 0, 112, 0.8);
-    border-radius: 10px 10px 0px 0px;
-}
-
-.sectionTwo div .grids{
-    background: linear-gradient(180deg, rgba(0, 0, 112, 0.7) 0%, rgba(0, 0, 112, 0) 100%);
-    border-radius: 0px;
-}
-
-.sectionThree div.col-lg-4:first-child form{
-    background: rgba(0, 0, 112, 0.75);
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.07);
-    border-radius: 10px;
-    padding: 0.9em;
-    color: white;
-}
-
-.sectionThree div.col-lg-4:first-child form div.d-flex:first-child div:first-child {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px 0px 0px 10px;
-    font-size: 12px;
-    color: white;
-}
-
-.sectionThree div.col-lg-4:first-child form div.d-flex:first-child div:last-child{
-    border-radius: 0px 10px 10px 0px;
-    font-size: 12px;
-    background: #21B8C7;
-    color: white;
-}
-
-.sectionThree div.col-lg-4:first-child form div.form-group select.form-control{
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
-}
-
-.sectionThree div.col-lg-4:first-child form div.form-group label{
-    font-size: small;
-    margin-bottom: 0px;
-    margin-left: 1.4em;
-}
-
-.sectionThree div.col-lg-4:first-child form div.row.mx-4.mb-2 div.col-lg-6.col-md-6.col-sm-6.col-6 input{
-    background: transparent;
-    border: 0px;
-    border-bottom: 1px solid  rgba(255, 255, 255, 0.6); 
-    width: 6.5em;
-    padding: 0px;
-    color: white;
-    outline: 0px;
-}
-
-.sectionThree div.col-lg-4:first-child form div.row.mx-4.mb-2 div.col-lg-6.col-md-6.col-sm-6.col-6 input::placeholder{
-    color: white;
-    font-size: x-small;
-}
-
-.sectionThree div.col-lg-4:first-child form div.form-group.mx-4 input{
-    background: transparent;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-    padding-left: 4em;
-    outline: none;
-    color: white;
-    width: 14em;
-}
-
-.sectionThree div.col-lg-4:first-child form div.form-group.mx-4 span{
-    position: relative;
-    top: -1.8em;
-    font-size: small;
-}
-
-.sectionThree div.col-lg-4:first-child form button{
-    color: #21B8C7;     
-    background: #FFFFFF;
-    border-radius: 30px;
-    width: 17em;
-}
-
-#convertion > p{
-    background: rgba(0, 0, 112, 0.75);
-    border-radius: 15px 15px 0px 0px;
-    font-size: 16px;
-    margin-bottom: 0px;
-}
-
-#convertion > .d-flex{
-    border-radius: 0px 0px 15px 15px;
-}
-
-#convertion > .d-flex p{
+div.welcome #heading{
+    background: rgba(211, 211, 211, 0.16);
+    padding: 30px;
     display: flex;
-    justify-content: space-between;
-    color: rgba(0, 0, 112, 0.75);
+}
+
+div.welcome #heading span img{
+    width: 1em;
+}
+
+div.welcome #heading span{
+    background-color: white;
+    font-size: 2em;
+    padding: 0.4em 0.4em;
+    margin-right: 1em;
+}
+
+div.welcome #heading div{
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+div.welcome #heading div div{
+    font-size: .88rem;
+    opacity: .6;
+    margin-top: 0.4em;
+}
+
+div.welcome div#grid{
+    display: grid;
+    grid-template-columns: 60% 35%;
+    justify-content: center;
+    grid-gap: 3em;
+    padding-top: 4em;
+    background-color: rgb(240, 241, 245);
+}
+
+
+div.welcome #grid .grids:first-child{
+    width: 32em;
+    background-color: white;
+    padding: 2em;
+    border-radius: 0.7em;
+    justify-self: center;
+    color: #495057;
+}
+
+div.welcome #grid .grids ul li a{
+    transition: all 0.5s;
+    display: block;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    font-size: 0.8em;
+    color: #495057;
+}
+
+div.welcome #grid .grids ul li a:hover{
+    background-color: #0f0f81;
+    color: white;
+}
+
+div.welcome #grid .grids ul li a.active{
+    background: #0f0f81;
+    color: white;
+}
+
+div.welcome #grid .grids form{
     font-size: 14px;
 }
 
-#convertion > .d-flex form div label{
-    font-size: 14px;
-    padding-left: 0.8   em;
-    color: rgba(0, 0, 112, 0.75);
+div.welcome #grid .grids:first-child input[type=submit]{
+    color: white;
+    background-color: #0f0f81;
+    width: 100%;
+    outline: none;
+    border-radius: 0.3em;
+    border: 0;
+    padding: 0.3em;
+}
+
+div.welcome #grid .grids:first-child input[type=submit]:hover{
+    background-color: #2955c8;
+}
+
+div.welcome #grid .grids:last-child{
+    background: white;
+    padding: 1em;
+    width: 20em;
+    height: fit-content;
+    border-radius: 0.2em;
+}
+
+div.welcome #grid .grids:last-child h3{
+    color: rgba(13, 27, 62, 0.7);
+    font-weight: bold;
+    font-size: .88rem;
+}
+
+div.welcome #grid .grids:last-child p{
+    margin-bottom: 0.2em;
+    color: #495057;
+    font-size: 0.9rem
+}
+
+div.welcome #grid .grids:last-child .dropdown button{
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    border: 0;
+    outline: 0;
+    border-radius: 0.3em;
+    margin-top: 1em;
+    padding: 0.6em;
+    width: 100%;
+}
+
+div.welcome #grid .grids:last-child .dropdown-menu{
+    width: 100%;
+    transition: all 0,5s;
+}
+
+
+.dropdown-toggle::after{
+    content: none;
 }
 
 @media screen and (max-width: 768px){
     .container-fluid .row .sidebar .footer{
         top: 200px;
     }
+
     .content nav.navbar{
         width: 100% !important;
     }
 
     .btn-warning{
         margin-bottom: 10px;
-    }
-
-    #first-row{
-        width: 100%;
-    }
-
-    #first-row .d-flex{
-        flex-wrap: wrap;
-    }
-
-    #first-row .col-lg-6.col-md-6.col-sm-6 .btn{
-        width: 150px;
-        font-size: 12px;
     }
 
     nav ul.navbar-nav.ml-auto{
@@ -259,9 +270,5 @@ div.welcome > .row{
 
     .content .container{
         padding: 20px;
-    }
-
-    .sectionThree{
-        flex-wrap: wrap;
     }
 }
