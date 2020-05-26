@@ -101,7 +101,7 @@ ul.navbar-nav.ml-auto a .caret{
 
 ul.navbar-nav.ml-auto sup{
     background-color: #000070;
-    color: rgb(229, 155, 155);
+    color: white;
     height: fit-content;
     border-radius: 20px;
     font-size: 9px;
@@ -113,11 +113,6 @@ ul.navbar-nav.ml-auto sup{
 div.welcome{
     padding-left: 3em;
     padding-right: 0px;
-}
-
-div.welcome > .row{
-    width: 65em;
-    margin-left: 1.5em;
 }
 
 div.welcome #heading{
@@ -243,6 +238,10 @@ div.welcome #grid .grids:last-child .dropdown-menu{
 
 .dropdown-toggle::after{
     content: none;
+}
+
+div.welcome .footer{
+    width: inherit;
 }
 
 @media screen and (max-width: 768px){
