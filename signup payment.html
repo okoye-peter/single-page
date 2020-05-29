@@ -80,6 +80,7 @@
             font-size: 12px;
             background-color: white;
             color: #21B8C7;
+            border-radius: 2em;
         }
 
         @media screen and (max-width: 768px) {
@@ -153,34 +154,29 @@
                     <form action="" method="post" class="ml-5">
                         <div class="input-group input-group-sm border mb-4 border-top-0 border-left-0 border-right-0" style="outline: none;">
                             <div class="input-group-prepend my-auto mr-4" style="outline: none;">
-                                <img src="assests/svg/person.svg" style="height: 15px;">
+                                <i class="fa fa-briefcase" style="height: 15px;color: white;"></i>
                             </div>
-                            <input type="text" name="" style="outline: none;" placeholder="Full name" class="form-control input">
+                            <input type="text" name="" style="outline: none;" placeholder="Bank name" class="form-control input">
                         </div>
                         <div class="input-group input-group-sm border mb-4 border-top-0 border-left-0 border-right-0" style="outline: none;">
                             <div class="input-group-prepend my-auto mr-4" style="outline: none;">
-                                <img src="assests/svg/mail.svg" style="height: 15px;">
+                                <i class="fa fa-user" style="height: 15px;color: white;"></i>
                             </div>
-                            <input type="email" name="" style="outline: none;" placeholder="Email" class="form-control input">
+                            <input type="email" name="" style="outline: none;" placeholder="Account Name" class="form-control input">
                         </div>
                         <div class="input-group input-group-sm border mb-4 border-top-0 border-left-0 border-right-0" style="outline: none;">
                             <div class="input-group-prepend my-auto mr-4" style="outline: none;">
-                                <img src="assests/svg/phone.svg" style="height: 15px;">
+                                <i class="fa fa-id-card" style="height: 15px;color: white;"></i>
                             </div>
-                            <input type="tel" name="" style="outline: none;" placeholder="Phone number" class="form-control input">
+                            <input type="tel" name="" style="outline: none;" placeholder="Account Number" class="form-control input">
                         </div>
                         <div class="input-group input-group-sm border mb-4 border-top-0 border-left-0 border-right-0" style="outline: none;">
                             <div class="input-group-prepend my-auto mr-4" style="outline: none;" onclick="passwordToggle(this)">
-                                <img src="assests/svg/Vector (3).svg" style="height: 12px;">
+                                <i class="fa fa-phone-alt" style="height: 15px;color: white;"></i>
                             </div>
-                            <input type="password" name="" style="outline: none;" placeholder="Password" class="form-control input">
+                            <input type="password" name="" style="outline: none;" placeholder="Phone number" class="form-control input">
                         </div>
-                        <div class="input-group input-group-sm border mb-4 border-top-0 border-left-0 border-right-0" style="outline: none;">
-                            <div class="input-group-prepend my-auto mr-4" style="outline: none;" onclick="passwordToggle(this)">
-                                <img src="assests/svg/Vector (3).svg" style="height: 12px;">
-                            </div>
-                            <input type="password" name="" style="outline: none;" placeholder="Repeat password" class="form-control input">
-                        </div>
+                        
                         <div class="custom-control custom-checkbox my-3">
                             <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
                             <label class="custom-control-label text-white" for="customCheck" style="font-size: 13px;">I agree to your <a href="#">terms and conditions</a></label>

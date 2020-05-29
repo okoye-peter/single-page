@@ -141,6 +141,7 @@ div.welcome > .row{
 .sectionThree .col-lg-2{
     background: #C4C4C4;
     border-radius: 0px 0px 20px 20px;
+    height: fit-content;
 }
 
 .sectionThree .col-lg-2 span#name{
@@ -186,6 +187,7 @@ div.welcome > .row{
     background: #21B8C7;
     border-radius: 10px;
     height: 4em;
+    margin-top: 2.3em;
 }
 
 .last .grid{
