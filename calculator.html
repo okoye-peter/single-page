@@ -116,10 +116,9 @@
                                 <div class="form-group">
                                     <label for="asset">Asset type:</label>
                                     <select class="form-control" id="asset" name="asset_type">
-                                      <option>1</option>
-                                      <option>2</option>
-                                      <option>3</option>
-                                      <option>4</option>
+                                      <option disabled selected></option>
+                                      <option value="BITCOINS">BITCOINS</option>
+                                      <option value="ETHER">ETHER</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
@@ -151,7 +150,7 @@
                         <div class="grids">
                             <h3>TRADE DETAILS</h3>
                             <p>Trade type: <span style="color: blue;" id="trade">sell</span></p>
-                            <p>Asset type: <span id="asset"></span></p>
+                            <p>Asset type: <span id="asset_display"></span></p>
                             <p>Conversion Rate: <span id="rate"></span></p>
                             <p>Value: <span id="value"></span></p>
                             <p>Wallet Id: <span id="wallet"></span></p>
@@ -237,6 +236,10 @@
             ele.classList.add('active');
             ele.parentNode.parentNode.children[i].children[0].classList.remove('active');
             return false;
+        }
+
+        document.getElementById('asset').onchange = function () {
+            document.getElementById('asset_display').innerHTML = this.value;
         }
     </script>
 </body>
