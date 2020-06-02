@@ -47,6 +47,8 @@ ul.navbar-nav{
     justify-content: flex-end;
 }
 
+
+
 aside.d-flex strong{
     font-style: normal;
     font-weight: lighter;
@@ -97,6 +99,11 @@ ul.navbar-nav.ml-auto sup{
     position: relative;
     top: -10px;
     left: -7px;
+}
+
+div.welcome{
+    margin-left: 10em;
+    margin-right: 8em;
 }
 
 div.welcome > .row{
@@ -196,6 +203,10 @@ div.welcome > .row{
 
 /* tablet */
 @media screen and (max-width: 1024px){
+    div.welcome{
+        margin-left: 6em;
+        margin-right: 4em;
+    }
     .container-fluid .row .sidebar .footer{
         top: 200px;
     }

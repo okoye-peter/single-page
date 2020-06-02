@@ -1,5 +1,5 @@
 *{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Futura Md BT;
     box-sizing: border-box;
 }
 
@@ -43,23 +43,14 @@ ul.navbar-nav{
     justify-content: flex-end;
 }
 
-#search{
-    border: 0px !important;
-    outline: 0px !important;
-}
 
 aside.d-flex strong{
-    font-family: Futura Bk BT;
     font-style: normal;
     font-weight: lighter;
     font-size: 14px;
     text-align: right;
     letter-spacing: 0.01em;
     color: #000070;
-}
-
-aside.d-flex small{
-    color: #A6ACBE;
 }
 
 aside#user{
@@ -145,7 +136,7 @@ div.welcome div#grid{
 
 
 div.welcome #grid .grids:first-child{
-    width: 32em;
+    width: 60%;
     background-color: white;
     padding: 2em;
     border-radius: 0.7em;
@@ -193,7 +184,7 @@ div.welcome #grid .grids:first-child input[type=submit]:hover{
 div.welcome #grid .grids:last-child{
     background: white;
     padding: 1em;
-    width: 20em;
+    width: 60%;
     height: fit-content;
     border-radius: 0.2em;
 }
