@@ -1,5 +1,5 @@
 *{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Futura Md BT;
     box-sizing: border-box;
 }
 
@@ -47,22 +47,7 @@ ul.navbar-nav{
     justify-content: flex-end;
 }
 
-button.btn i.fa.fa-search{
-    position: absolute;
-    left: 12.5%;
-    right: 14.63%;
-    top: 12.5%;
-    bottom: 14.62%;
-    background: #C9CED6 !important;
-}
-
-input.form-control.form-control-sm{
-    border: 0px !important;
-    outline: 0px !important;
-}
-
 aside.d-flex strong{
-    font-family: Futura Bk BT;
     font-style: normal;
     font-weight: lighter;
     font-size: 14px;

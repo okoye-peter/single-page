@@ -1,5 +1,5 @@
 *{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Futura Md BT;
     box-sizing: border-box;
 }
 
@@ -47,22 +47,7 @@ ul.navbar-nav{
     justify-content: flex-end;
 }
 
-button.btn i.fa.fa-search{
-    position: absolute;
-    left: 12.5%;
-    right: 14.63%;
-    top: 12.5%;
-    bottom: 14.62%;
-    background: #C9CED6 !important;
-}
-
-input.form-control.form-control-sm{
-    border: 0px !important;
-    outline: 0px !important;
-}
-
 aside.d-flex strong{
-    font-family: Futura Bk BT;
     font-style: normal;
     font-weight: lighter;
     font-size: 14px;
@@ -114,9 +99,10 @@ ul.navbar-nav.ml-auto sup{
     left: -7px;
 }
 
-div.welcome > .row{
-    width: inherit;
-    margin-left: 0.1em;
+div.welcome {
+    padding-left: 5em;
+    margin-left: calc(100% - 90%);
+    margin-right: calc(100% - 90%);
 }
 
 .sectionTwo > div:first-child{
@@ -149,7 +135,7 @@ div.welcome > .row{
     background-color: white;
     border-radius: 1em;
     padding: 0.3em;
-    width: 10em;
+    width: calc(100% - 20%);
     margin-top: 7em;
     font-size: 14px;
     text-align: center;
@@ -260,4 +246,26 @@ div.welcome > .row{
     background: white;
     color: rgba(0,0,112,0.75);
     border-radius: 1em;
+}
+
+/* tablet */
+@media screen and (max-width:1024px){
+    .sectionTwo .grids img{
+        width: 5em;
+        height: 5em;
+        top: 3.5em;
+    }   
+
+    .sectionThree .col-lg-2 #wallet > .grid p,.sectionThree .col-lg-2 .grid p{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .last{
+        height: 7em;
+    }
+
+    .sectionThree.d-flex .col-lg-10 div div .grid{
+        flex-wrap: wrap;
+    }
 }

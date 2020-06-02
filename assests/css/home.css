@@ -1,5 +1,5 @@
 *{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Futura Bk BT;
     box-sizing: border-box;
 }
 
@@ -44,22 +44,7 @@ ul.navbar-nav{
     justify-content: flex-end;
 }
 
-button.btn i.fa.fa-search{
-    position: absolute;
-    left: 12.5%;
-    right: 14.63%;
-    top: 12.5%;
-    bottom: 14.62%;
-    background: #C9CED6 !important;
-}
-
-input.form-control.form-control-sm{
-    border: 0px !important;
-    outline: 0px !important;
-}
-
 aside.d-flex strong{
-    font-family: Futura Bk BT;
     font-style: normal;
     font-weight: lighter;
     font-size: 14px;
@@ -111,12 +96,21 @@ ul.navbar-nav.ml-auto sup{
     left: -7px;
 }
 
-div.welcome div#first-row {
-    background: url('../svg/Group.svg') no-repeat;
-    background-position: center;
+div.welcome {
+    padding-left: 5em;
+    margin-left: calc(100% - 90%);
+    margin-right: calc(100% - 90%);
 }
 
-div.container-fluid div#first-row .btn{
+div.welcome div#first-row {
+    background: url('../svg/Group.svg') no-repeat;
+    background-size: initial;
+    background-position: center;
+    padding: 1em;
+    width: 100%;
+}
+
+div.welcome div#first-row .btn{
     background-color: #FFB800; 
     font-size: smaller; 
     width: 200px; 
@@ -125,19 +119,15 @@ div.container-fluid div#first-row .btn{
     width: 200px;
 }
 
-div.container div#first-row h6, div.container div#first-row .d-flex{
-    width: 64.5em;
-}
-
-div.welcome > .row{
-    width: 65em;
-    margin-left: 1.5em;
+div.welcome div#first-row h6, div.welcome div#first-row .d-flex{
+    width: inherit;
 }
 
 .btn-warning{
     color: white;
 }
-div.container div.row{
+
+div.welcome div.row{
     border-radius: 11.0889px;
     background-color: none;
 }
@@ -299,4 +289,4 @@ div.container div.row{
     .footer h6, .footer small{
         font-size: 10px;
     }
-}
+}   
